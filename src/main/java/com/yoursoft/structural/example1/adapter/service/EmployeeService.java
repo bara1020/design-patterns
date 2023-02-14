@@ -1,4 +1,4 @@
-package com.yoursoft.structural.example1.service;
+package com.yoursoft.structural.example1.adapter.service;
 
 import com.yoursoft.structural.example1.Employee;
 
