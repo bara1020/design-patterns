@@ -1,6 +1,6 @@
-package com.yoursoft.structural.example1.adapter.service;
+package com.yoursoft.structural.adapter.service;
 
-import com.yoursoft.structural.example1.Employee;
+import com.yoursoft.structural.adapter.example1.Employee;
 
 public class EmployeeService {
 

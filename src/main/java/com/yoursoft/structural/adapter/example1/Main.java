@@ -1,7 +1,7 @@
-package com.yoursoft.structural.example1;
+package com.yoursoft.structural.adapter.example1;
 
-import com.yoursoft.structural.example1.adapter.EmployeeAdapter;
-import com.yoursoft.structural.example1.adapter.service.EmployeeService;
+import com.yoursoft.structural.adapter.EmployeeAdapter;
+import com.yoursoft.structural.adapter.service.EmployeeService;
 
 import java.util.Date;
 

@@ -1,7 +1,7 @@
-package com.yoursoft.structural.example1.adapter;
+package com.yoursoft.structural.adapter;
 
-import com.yoursoft.structural.example1.Employee;
-import com.yoursoft.structural.example1.Student;
+import com.yoursoft.structural.adapter.example1.Employee;
+import com.yoursoft.structural.adapter.example1.Student;
 
 public class EmployeeAdapter {
 

@@ -1,4 +1,4 @@
-package com.yoursoft.structural.example1;
+package com.yoursoft.structural.adapter.example1;
 
 import java.util.Date;
 
