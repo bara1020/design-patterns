@@ -43,4 +43,17 @@ Este le permite al cliente simplificar la utilización de nuestro sistema sin ne
 ## PROXY:
 Permite tener un intermediario o ejecutar algo antes de ejecutar la funcion final. Se utiliza cuando se requiere acceso a objetos muy pesados que hacen que el rendimiento de la plataforma se degrade, para ello en el proxi se hacen consultas en caché, disco locales etc 
 
- 
+ # COMPARACIÓN ENTRE PATRONES
+
+
+- Adapter cambia la interfaz de un objeto existente mientras que Decorator mejora un objeto sin cambiar su interfaz. Además, Decorator soporta la composición recursiva, lo cual no es posible al utilizar Adapter.
+
+- Adapter proporciona una interfaz diferente al objeto envuelto, Proxy le proporciona la misma interfaz y Decorator le proporciona una interfaz mejorada
+
+- Facade define una nueva interfaz para objetos existentes, mientras que Adapter intenta hacer que la interfaz existente sea utilizable. Normalmente Adapter sólo envuelve un objeto, mientras que Facade trabaja con todo un subsistema de objetos.
+
+- Facade y Mediator tienen trabajos similares: ambos intentan organizar la colaboración entre muchas clases estrechamente acopladas.
+
+- Facade define una interfaz simplificada a un subsistema de objetos, pero no introduce ninguna nueva funcionalidad. El propio subsistema no conoce la fachada. Los objetos del subsistema pueden comunicarse directamente.
+
+- Mediator centraliza la comunicación entre componentes del sistema. Los componentes conocen únicamente el objeto mediador y no se comunican directamente. 
