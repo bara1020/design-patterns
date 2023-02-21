@@ -37,11 +37,14 @@ Por ejempplo cuando queremos usar código existente, pero la interfaz no es comp
 ## BRIDGE
 Cuando se necesita separar la abstracción de la implementación. Básicamente es implementar una interfaz o clase abtracta con el comportamiento en comun que tiene un sistema pero que de manera independiente de pueden comportar de manera diferente. (Es el objetivo de implementar las interfaces)
 
-## FACHADA:
+## FACADE:
 Este le permite al cliente simplificar la utilización de nuestro sistema sin necesidad de tener toda la complejidad que tiene por dentro para poder ejecutar o llegar a un objetivo. Por ejemplo si se desea hacer el envío de un email y que esa información del envío se guarde en un sistema externo o tenga que hacer consulta en base de datos para poder armar el objeto final para hacer el envío.
 
 ## PROXY:
 Permite tener un intermediario o ejecutar algo antes de ejecutar la funcion final. Se utiliza cuando se requiere acceso a objetos muy pesados que hacen que el rendimiento de la plataforma se degrade, para ello en el proxi se hacen consultas en caché, disco locales etc 
+
+## DECORATOR:
+Permite agregar nuevas caracteristicar a un objeto en especifico en tiempo de ejecución
 
  # COMPARACIÓN ENTRE PATRONES
 
