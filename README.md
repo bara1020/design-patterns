@@ -49,6 +49,11 @@ Permite agregar nuevas caracteristicar a un objeto en especifico en tiempo de ej
 ## COMPOSITE:
 Permite componer objetos en forma de arbol, es muy util cuando se requiere sistemas que manejan jerarquias, por ejemplo un sistema de distribución donde se puede incluir varios objetos en una caja o en subcajas de empaque, o por ejemplo un sistema donde se maneja el sistema de jerarquias entre roles de la compañia.
 
+## FLYWIGHT
+Este patron permite optimizar el manejo de la menoria cuando se requiere manejar sistemas con valores estaticos por ello, este patron es inmutable, ya que un objeto se instancia una única vez al no tener que cambiar el valor dentro de la aplicación
+
+Para un acceso más cómodo a varios objetos flyweight, puedes crear un método fábrica que gestione un grupo de objetos flyweight existentes. El método acepta el estado intrínseco del flyweight deseado por un cliente, busca un objeto flyweight existente que coincida con este estado y lo devuelve si lo encuentra. Si no, crea un nuevo objeto flyweight y lo añade al grupo.
+
  # COMPARACIÓN ENTRE PATRONES
 
 
@@ -68,4 +73,8 @@ Permite componer objetos en forma de arbol, es muy util cuando se requiere siste
 
 - Un Decorator es como un Composite pero sólo tiene un componente hijo. Hay otra diferencia importante: Decorator añade responsabilidades adicionales al objeto envuelto, mientras que Composite se limita a “recapitular” los resultados de sus hijos.
 
--Los diseños que hacen un uso amplio de Composite y Decorator a menudo pueden beneficiarse del uso del Prototype. Aplicar el patrón te permite clonar estructuras complejas en lugar de reconstruirlas desde cero.
+- Los diseños que hacen un uso amplio de Composite y Decorator a menudo pueden beneficiarse del uso del Prototype. Aplicar el patrón te permite clonar estructuras complejas en lugar de reconstruirlas desde cero.
+- Flyweight podría asemejarse a Singleton si de algún modo pudieras reducir todos los estados compartidos de los objetos a un único objeto flyweight. Pero existen dos diferencias fundamentales entre estos patrones:
+
+Solo debe haber una instancia Singleton, mientras que una clase Flyweight puede tener varias instancias con distintos estados intrínsecos.
+El objeto Singleton puede ser mutable. Los objetos flyweight son inmutables.
