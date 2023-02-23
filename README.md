@@ -46,6 +46,9 @@ Permite tener un intermediario o ejecutar algo antes de ejecutar la funcion fina
 ## DECORATOR:
 Permite agregar nuevas caracteristicar a un objeto en especifico en tiempo de ejecución
 
+## COMPOSITE:
+Permite componer objetos en forma de arbol, es muy util cuando se requiere sistemas que manejan jerarquias, por ejemplo un sistema de distribución donde se puede incluir varios objetos en una caja o en subcajas de empaque, o por ejemplo un sistema donde se maneja el sistema de jerarquias entre roles de la compañia.
+
  # COMPARACIÓN ENTRE PATRONES
 
 
@@ -59,4 +62,10 @@ Permite agregar nuevas caracteristicar a un objeto en especifico en tiempo de ej
 
 - Facade define una interfaz simplificada a un subsistema de objetos, pero no introduce ninguna nueva funcionalidad. El propio subsistema no conoce la fachada. Los objetos del subsistema pueden comunicarse directamente.
 
-- Mediator centraliza la comunicación entre componentes del sistema. Los componentes conocen únicamente el objeto mediador y no se comunican directamente. 
+- Mediator centraliza la comunicación entre componentes del sistema. Los componentes conocen únicamente el objeto mediador y no se comunican directamente.
+
+- Se puede manejar un Builder cuando la jerarquia es muy compleja en vez de Composite.
+
+- Un Decorator es como un Composite pero sólo tiene un componente hijo. Hay otra diferencia importante: Decorator añade responsabilidades adicionales al objeto envuelto, mientras que Composite se limita a “recapitular” los resultados de sus hijos.
+
+-Los diseños que hacen un uso amplio de Composite y Decorator a menudo pueden beneficiarse del uso del Prototype. Aplicar el patrón te permite clonar estructuras complejas en lugar de reconstruirlas desde cero.
