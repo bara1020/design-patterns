@@ -17,11 +17,9 @@ public class Main {
         System.out.println("Hashcode: " + redSmallShirt.hashCode());
         System.out.println("Hashcode: " + redSmallShirt2.hashCode());
 
-        // New thin Blue Brush
         Shirt blueMediumShirt = ShirtFactory.getShirt(ShirtSize.SMALL, Color.BLUE.value); //created new pen
         blueMediumShirt.draw("First appearance!!");
 
-        // Blue Brush is shared
         Shirt blueMediumShirt2 = ShirtFactory.getShirt(ShirtSize.SMALL, Color.BLUE.value);  //created new pen
         blueMediumShirt2.draw("Second appearance!!");
 
@@ -29,11 +27,9 @@ public class Main {
         System.out.println("Hashcode: " + blueMediumShirt.hashCode());
         System.out.println("Hashcode: " + blueMediumShirt2.hashCode());
 
-        // New MEDIUM Yellow Brush
         Shirt greenLargeShirt = ShirtFactory.getShirt(ShirtSize.SMALL, Color.GREEN.value); //created new pen
         greenLargeShirt.draw("First appearance!!");
 
-        // Yellow brush is shared
         Shirt greenLargeShirt2 = ShirtFactory.getShirt(ShirtSize.SMALL, Color.GREEN.value); //created new pen
         greenLargeShirt.draw("Second appearance!!");
 
