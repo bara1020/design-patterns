@@ -1,12 +1,12 @@
 package com.yoursoft.behavioral.command;
 
-public class ManuItem {
+public class MenuItem {
 
     private String menuItemId;
 
     private String menuItemName;
 
-    public ManuItem(String menuItemId, String menuItemName) {
+    public MenuItem(String menuItemId, String menuItemName) {
         this.menuItemId = menuItemId;
         this.menuItemName = menuItemName;
     }
