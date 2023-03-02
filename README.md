@@ -54,6 +54,12 @@ Este patron permite optimizar el manejo de la menoria cuando se requiere manejar
 
 Para un acceso más cómodo a varios objetos flyweight, puedes crear un método fábrica que gestione un grupo de objetos flyweight existentes. El método acepta el estado intrínseco del flyweight deseado por un cliente, busca un objeto flyweight existente que coincida con este estado y lo devuelve si lo encuentra. Si no, crea un nuevo objeto flyweight y lo añade al grupo.
 
+# PATRONES DE COMPORTAMIENTO
+
+## CHAIN OF RESPONSABILITY
+Este patron permite crear una cadena de manejadores que se relacionan uno entre si. Cada manejador tiene su lógica individual y está encargada de ejecutar el siguente manejador que se encuentra dentro de la cadena.
+Un ejemplo de este es un sistema de aprobación de casos donde debe pasar por un flujo de aprobación para que puede ser ejecutado. Cada manejador sería cada aprobador que tiene que ejecutar ciertas acciones antes de realizar la aprobación y se encarga de realizar o no la aprobación.
+
  # COMPARACIÓN ENTRE PATRONES
 
 
