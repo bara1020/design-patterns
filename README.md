@@ -60,7 +60,14 @@ Para un acceso más cómodo a varios objetos flyweight, puedes crear un método 
 Este patron permite crear una cadena de manejadores que se relacionan uno entre si. Cada manejador tiene su lógica individual y está encargada de ejecutar el siguente manejador que se encuentra dentro de la cadena.
 Un ejemplo de este es un sistema de aprobación de casos donde debe pasar por un flujo de aprobación para que puede ser ejecutado. Cada manejador sería cada aprobador que tiene que ejecutar ciertas acciones antes de realizar la aprobación y se encarga de realizar o no la aprobación.
 
- # COMPARACIÓN ENTRE PATRONES
+## COMMAND
+Este patron permite independicar la ejecutación de tareas administradas por una única interfaz. Con este patrón cada tare es independiente, y el añadir nuevas tareas o funcionalides no afecta a las demás por lo cual es muy facil de realizar. 
+Un ejemplo de este patrón un cuando se pueden ejecutar multiples tareas desde diferentes puntos de la aplicación y se maneja el mismo tipo de objeto, por ejemplo si se tiene la función de copiar o pegar un objeto o texto, no importa desde que punto se llame a la función de copiar, siempre se hará el llamado a la implementación de la ejecución y se aplica la misma lógica asi se llame desde firentes puntos.
+
+## ITERATOR
+Este patrón es utilizado para permitir iterar o recorrer diferentes tipos de colecciones sin que el cliente conozca de que tipo es (lista, pila, árbol, etc).
+
+# COMPARACIÓN ENTRE PATRONES
 
 
 - Adapter cambia la interfaz de un objeto existente mientras que Decorator mejora un objeto sin cambiar su interfaz. Además, Decorator soporta la composición recursiva, lo cual no es posible al utilizar Adapter.
