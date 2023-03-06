@@ -67,6 +67,10 @@ Un ejemplo de este patrón un cuando se pueden ejecutar multiples tareas desde d
 ## ITERATOR
 Este patrón es utilizado para permitir iterar o recorrer diferentes tipos de colecciones sin que el cliente conozca de que tipo es (lista, pila, árbol, etc).
 
+## MEDIATOR
+Mediator centraliza la comunicación entre componentes del sistema. Los componentes conocen únicamente el objeto mediador y no se comunican directamente.
+El ejemplo más común sería un chat, donde se encuentra un mediador el cual recibe las peticiones para el envío de un mensaje y este es el encargado de mandarlo al resto de usuarios registrados en el chat.
+
 # COMPARACIÓN ENTRE PATRONES
 
 
