@@ -71,6 +71,9 @@ Este patrón es utilizado para permitir iterar o recorrer diferentes tipos de co
 Mediator centraliza la comunicación entre componentes del sistema. Los componentes conocen únicamente el objeto mediador y no se comunican directamente.
 El ejemplo más común sería un chat, donde se encuentra un mediador el cual recibe las peticiones para el envío de un mensaje y este es el encargado de mandarlo al resto de usuarios registrados en el chat.
 
+## MEMENTO
+permite guardar y restaurar el estado previo de un objeto lo que quiere decir que es comunmente utilizado para guardar las versiones que se han guardado de una documento o plantilla.
+
 # COMPARACIÓN ENTRE PATRONES
 
 
@@ -102,3 +105,4 @@ El ejemplo más común sería un chat, donde se encuentra un mediador el cual re
 -Puedes utilizar Command y Memento juntos cuando implementes “deshacer”. En este caso, los comandos son responsables de realizar varias operaciones sobre un objeto destino, mientras que los mementos guardan el estado de ese objeto justo antes de que se ejecute el comando.
 - Puedes utilizar Command para convertir cualquier operación en un objeto. Los parámetros de la operación se convierten en campos de ese objeto. La conversión te permite aplazar la ejecución de la operación, ponerla en cola, almacenar el historial de comandos, enviar comandos a servicios remotos, etc.
 - Por su parte, Strategy normalmente describe distintas formas de hacer lo mismo, permitiéndote intercambiar estos algoritmos dentro de una única clase contexto.
+-Puedes utilizar Command y Memento juntos cuando implementes “deshacer”. 
