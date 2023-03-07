@@ -72,7 +72,10 @@ Mediator centraliza la comunicación entre componentes del sistema. Los componen
 El ejemplo más común sería un chat, donde se encuentra un mediador el cual recibe las peticiones para el envío de un mensaje y este es el encargado de mandarlo al resto de usuarios registrados en el chat.
 
 ## MEMENTO
-permite guardar y restaurar el estado previo de un objeto lo que quiere decir que es comunmente utilizado para guardar las versiones que se han guardado de una documento o plantilla.
+Permite guardar y restaurar el estado previo de un objeto lo que quiere decir que es comunmente utilizado para guardar las versiones que se han guardado de una documento o plantilla.
+
+## OBSERVE
+Este patrón permite crear un mecanismo basado en em modelo de suscripción el cual le permite realizar notificaciónes a todos los clientes que se encuentre suscritos a él. Por ejemplo si una grupo de personas se suscriben a una cuenta de una red social, y quien es dueño de la cuenta hace una publicación, dicha publicación se envía a todas las personas que se suscribieron a dicha cuenta.
 
 # COMPARACIÓN ENTRE PATRONES
 
@@ -94,15 +97,33 @@ permite guardar y restaurar el estado previo de un objeto lo que quiere decir qu
 - Un Decorator es como un Composite pero sólo tiene un componente hijo. Hay otra diferencia importante: Decorator añade responsabilidades adicionales al objeto envuelto, mientras que Composite se limita a “recapitular” los resultados de sus hijos.
 
 - Los diseños que hacen un uso amplio de Composite y Decorator a menudo pueden beneficiarse del uso del Prototype. Aplicar el patrón te permite clonar estructuras complejas en lugar de reconstruirlas desde cero.
+
 - Flyweight podría asemejarse a Singleton si de algún modo pudieras reducir todos los estados compartidos de los objetos a un único objeto flyweight. Pero existen dos diferencias fundamentales entre estos patrones:
  - Solo debe haber una instancia Singleton, mientras que una clase Flyweight puede tener varias instancias con distintos estados intrínsecos.
  - El objeto Singleton puede ser mutable. Los objetos flyweight son inmutables.
  - Chain of Responsibility, Command, Mediator y Observer abordan distintas formas de conectar emisores y receptores de solicitudes:
  - Chain of Responsibility pasa una solicitud secuencialmente a lo largo de una cadena dinámica de receptores potenciales hasta que uno de ellos la gestiona.
+
 - Command establece conexiones unidireccionales entre emisores y receptores.
+
 - Mediator elimina las conexiones directas entre emisores y receptores, forzándolos a comunicarse indirectamente a través de un objeto mediador.
+
 - Observer permite a los receptores suscribirse o darse de baja dinámicamente a la recepción de solicitudes.
--Puedes utilizar Command y Memento juntos cuando implementes “deshacer”. En este caso, los comandos son responsables de realizar varias operaciones sobre un objeto destino, mientras que los mementos guardan el estado de ese objeto justo antes de que se ejecute el comando.
+
+- Puedes utilizar Command y Memento juntos cuando implementes “deshacer”. En este caso, los comandos son responsables de realizar varias operaciones sobre un objeto destino, mientras que los mementos guardan el estado de ese objeto justo antes de que se ejecute el comando.
+
 - Puedes utilizar Command para convertir cualquier operación en un objeto. Los parámetros de la operación se convierten en campos de ese objeto. La conversión te permite aplazar la ejecución de la operación, ponerla en cola, almacenar el historial de comandos, enviar comandos a servicios remotos, etc.
+
 - Por su parte, Strategy normalmente describe distintas formas de hacer lo mismo, permitiéndote intercambiar estos algoritmos dentro de una única clase contexto.
--Puedes utilizar Command y Memento juntos cuando implementes “deshacer”. 
+
+- Puedes utilizar Command y Memento juntos cuando implementes “deshacer”.
+
+- Chain of Responsibility, Command, Mediator y Observer abordan distintas formas de conectar emisores y receptores de solicitudes:
+
+- Chain of Responsibility pasa una solicitud secuencialmente a lo largo de una cadena dinámica de receptores potenciales hasta que uno de ellos la gestiona.
+
+- Command establece conexiones unidireccionales entre emisores y receptores.
+
+- Mediator elimina las conexiones directas entre emisores y receptores, forzándolos a comunicarse indirectamente a través de un objeto mediador.
+
+- Observer permite a los receptores suscribirse o darse de baja dinámicamente a la recepción de solicitudes.
