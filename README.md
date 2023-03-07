@@ -80,6 +80,9 @@ Este patrón permite crear un mecanismo basado en em modelo de suscripción el c
 ## STATE
 Este patrón es utilizado cuando se necesita que el comportamiento de un objeto se altere dependiendo del estado en que se encuentre. Por ejemplo si se tiene un objeto encargado de enviar una notificación ya sea por sms o email, dependiente del tipo de envío (estado) ejecuta la notificación por uno u otro canal (email o sms).
 
+## STRATEGY
+Este patrón se utiliza cuando en un sistema de tiene la posibilidad de ejecutar algo de diferentes maneras y el cliente es quien toma la decisión de cual camino tomar. Por ejemplo si se tiene un sistema que envia un mensaje otp y el cliente puede seleccionar si desea enviar por email o por sms, o en una tiene cuando se va a realizar un pago si el pago quiere que se haga por crédito o débito.
+
 # COMPARACIÓN ENTRE PATRONES
 
 
