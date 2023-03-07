@@ -77,6 +77,9 @@ Permite guardar y restaurar el estado previo de un objeto lo que quiere decir qu
 ## OBSERVE
 Este patrón permite crear un mecanismo basado en em modelo de suscripción el cual le permite realizar notificaciónes a todos los clientes que se encuentre suscritos a él. Por ejemplo si una grupo de personas se suscriben a una cuenta de una red social, y quien es dueño de la cuenta hace una publicación, dicha publicación se envía a todas las personas que se suscribieron a dicha cuenta.
 
+## STATE
+Este patrón es utilizado cuando se necesita que el comportamiento de un objeto se altere dependiendo del estado en que se encuentre. Por ejemplo si se tiene un objeto encargado de enviar una notificación ya sea por sms o email, dependiente del tipo de envío (estado) ejecuta la notificación por uno u otro canal (email o sms).
+
 # COMPARACIÓN ENTRE PATRONES
 
 
@@ -127,3 +130,8 @@ Este patrón permite crear un mecanismo basado en em modelo de suscripción el c
 - Mediator elimina las conexiones directas entre emisores y receptores, forzándolos a comunicarse indirectamente a través de un objeto mediador.
 
 - Observer permite a los receptores suscribirse o darse de baja dinámicamente a la recepción de solicitudes.
+
+- cambian el comportamiento del contexto delegando parte del trabajo a objetos ayudantes. Strategy hace que estos objetos sean completamente independientes y no se conozcan entre sí. Sin embargo, State no restringe las dependencias entre estados concretos, permitiéndoles alterar el estado del contexto a voluntad.
+
+## Referencía:
+Documentación teória obtenida de https://refactoring.guru/es/design-patterns/state
